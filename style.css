@@ -1,0 +1,407 @@
+ 
+ 
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Cairo&family=Kanit:wght@700&family=Merriweather:ital,wght@0,700;1,400&family=Sacramento&family=Ubuntu&display=swap');
+
+* {
+   scroll-behavior: smooth;
+   margin:0 ;
+   padding:0; 
+}
+ body {
+    overflow-x: hidden;
+    
+    /* height:200vh; */
+ }
+ .navbar-brand { 
+    font-size: 30px;
+ }
+ .navbar-nav   li a {
+    margin:0 20px;
+    font-size: 20px;
+ }
+ .nav-link:hover{
+    opacity: 70%;
+ }
+  
+ .navbar {   
+    padding:10%;
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-nav li {
+ padding: 20px 0;
+} 
+.nav-active {
+  color: blue; /* You can set your desired active link styling here */
+}
+
+  
+
+
+
+
+  
+
+ /* the main section   */
+ .mainSection{
+  padding:0% 0 15%;
+ }
+ .mainText {
+  font-size: 39px;
+ }
+ .mainText, em{
+    padding: 10px 0 0 60px;
+    font-family: kanit;
+ }
+
+ .Myrow{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+ }
+ #svg1 {
+    /* in the futures */
+    width:500px;
+    /* height: 50vh; */
+ }
+
+ @media (max-width:1100px)
+ {
+    .Myrow {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+    }
+
+    #svg1 {
+        /* in the futures */
+        width:500px;
+        /* height: 50vh; */
+        
+     }
+    .mainText, em{
+        padding: 90px 0 0 0px;
+        /* margin: 90px 0 0 60px; */
+         
+     }
+     .leftBox{
+        padding: 10%;
+        order:1;
+     }
+ }
+
+  
+
+ @media (max-width:580px)
+ {
+    #svg1 {
+        /* in the futures */
+        width:330px;
+        /* height: 50vh; */
+     }
+    .mainText, em{
+        
+        /* padding: 90px 0 0 60px; */
+        /* margin: 90px 0 0 60px; */
+     }
+     .mainText{
+        font-size: 20px;
+     }
+     em {
+        font-size: 15px;
+     }
+ }
+
+ @media (max-width:420px)
+ {
+    #svg1 {
+        /* in the futures */
+        width: 220px;
+        /* height: 50vh; */
+     }
+    .mainText, em{
+        
+        /* padding: 90px 0 0 60px; */
+        /* margin: 90px 0 0 60px; */
+     }
+     .mainText{
+        font-size: 19px;
+     }
+     #offcanvasRightLabel{
+        font-size: 18px;
+     }
+     .offcanvas-body ul li a {
+        font-size: 14px;
+     } 
+ } 
+ .mainSection {
+    height:80vh;
+ }
+
+ /* About me section   
+  */ 
+  
+  .arrowUpButton {
+
+   position: fixed;
+   bottom: 400px; /* Adjust the distance from the bottom */
+   right: 0px; 
+   z-index: 99;
+   border-radius: 50% ;
+   font-size: 34px;
+    
+    
+  }
+  .about-me {
+    /* background-color: #001a33; */
+    /* height:100vh */
+    padding: 20% 0;
+  }
+  .My-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    /* cccc */
+    /* padding: 2%; */
+    padding: 10% 0;
+    gap:10px
+  }
+  .cS{
+    border: none;
+    background-color: black;
+    border-radius:3px
+  }
+  .cardImage{
+    width:50px 
+  }
+  .Languages li { 
+    list-style: none;
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .My-card h3 {
+   font-family: kanit;
+   font-size: 37px;
+  }
+
+ 
+@media (max-width:600px) {
+    .Myrow2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+         
+         
+      }
+      .Languages li { 
+        list-style: none;
+        font-size: 15px;
+        padding: 15px;
+      }
+      .My-card h3 {
+         font-family: kanit;
+         font-size: 28px;
+        }
+        .arrowUpButton {
+
+         position: fixed;
+         bottom: 400px; /* Adjust the distance from the bottom */
+         right: 0px; 
+         z-index: 99;
+         border-radius: 50% ;
+         font-size: 28px;
+          
+          
+        }
+}
+
+@media (max-width:300px) {
+   .Myrow2{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+        
+     }
+     .Languages li { 
+       list-style: none;
+       font-size: 15px;
+       padding: 10px;
+     }
+     .My-card h3 {
+        font-family: kanit;
+        font-size: 22px;
+       }
+       .arrowUpButton {
+         display: none;
+         position: fixed;
+         bottom: 400px; /* Adjust the distance from the bottom */
+         right: 0px; 
+         z-index: 99;
+         border-radius: 50% ;
+         font-size: 25px;
+          
+          
+          
+        }
+}
+
+ /* my projects section   */
+
+ 
+ .Myrow3{
+   display: flex;
+    
+   justify-content: center;
+   align-items: center;
+ }
+ .CardClassForProjects{
+   max-width:400px;
+   min-width: 250px;
+ }
+
+ @media (max-width:350px){
+   .CardClassForProjects{
+      max-width:400px;
+      min-width: 200px;
+    }
+    .card-title{
+      font-size: 18px;
+    }
+    .card-text{
+      font-size: 15px;
+    }
+    .card-body a{
+      font-size: 12px;
+    }
+ }
+
+ footer {
+   background-color: black; 
+   color:white; 
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   font-size: 20px;
+   width: 100%;
+ }
+  /* contact me section  */ 
+
+
+ .contact-me{
+   padding: 12% 0%;
+   
+ }
+
+ /* adjust the size of text   */
+ .social-links li{
+  position: relative;
+  left: -43px;
+  list-style: none;
+  padding: 70px 0 0 0 ;
+  font-size: 25px;
+}
+
+.social-links li i{
+   
+  font-size: 46px;
+   
+}
+.linksS{
+  display: flex;
+  
+  align-items:center;
+  gap:17px
+}
+/* ##################################3  */
+
+ .THEs {
+   display: flex;
+   align-items:center;
+   justify-content: space-between;
+   
+    
+   /* flex-wrap: wrap; */
+ } 
+ .rightSection svg {
+  width:60%;
+}
+  
+ @media(max-width:1100px)
+   { 
+    .THEs {
+      display: flex;
+      flex-direction: column;
+
+    }
+    .leftSection {
+      padding: 0 10px;
+    }
+     
+    /* adjust the size of text   */
+    .social-links li{
+      position: relative;
+      left: -43px;
+      list-style: none;
+      padding: 70px 0 0 0 ;
+      font-size: 20px;
+    }
+
+    .social-links li i{
+      
+      font-size: 35px;
+      
+    }
+    .linksS{
+      display: flex;
+      
+      align-items:center;
+      gap:17px
+    }
+    .headTitle {
+      font-size: 25px;
+    }
+    .SubText1 {
+      font-weight:200 ;
+      font-size: 20px;
+    }
+/* ##################################3  */
+
+   }
+   body::-webkit-scrollbar {
+    width: 14px; /* Width of the scrollbar */
+  }
+  
+  /* Style for the scrollbar track */
+  body::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the track */
+  }
+  
+  /* Style for the scrollbar thumb (the draggable part) */
+  body::-webkit-scrollbar-thumb {
+    background-color:chartreuse; /* Color of the thumb */
+  }
+  
+  /* Style for the scrollbar thumb on hover */
+   
+
+  
+
+
+   
+  
+ 
